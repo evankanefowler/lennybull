@@ -36,9 +36,9 @@ h1, h2 {
 }
 
 h1 {
-  font-family: 'League Gothic', 'Arial Narrow', sans-serif;
-  font-size: clamp(5rem, 13vw, 12rem);
-  letter-spacing: .06em;
+  font-family: 'Staatliches', sans-serif;
+  font-size: clamp(6rem, 15vw, 14rem);
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 
@@ -233,10 +233,32 @@ section:not(.hero) { padding: 6rem 0; }
   align-items: start;
 }
 
-.about-photo img {
+.about-photo img:first-child {
   width: 100%;
   border-radius: 3px;
   object-fit: cover;
+}
+
+.about-photo-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .35rem;
+  margin-top: .35rem;
+}
+
+.about-photo-strip img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 2px;
+  opacity: .5;
+  filter: grayscale(50%);
+  transition: opacity .25s, filter .25s;
+}
+
+.about-photo-strip img:hover {
+  opacity: .85;
+  filter: grayscale(0%);
 }
 
 .about-text h2  { margin-bottom: 1.2rem; }

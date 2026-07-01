@@ -7,7 +7,7 @@
   <meta name="description" content="Lenny Bull — Toronto rock band. Post-punk meets new wave. Strange Vacation EP out now." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=League+Gothic&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=Staatliches&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -58,6 +58,11 @@
     <div class="container about-grid">
       <div class="about-photo">
         <img src="images/Diner+Shot.jpg_1.webp" alt="Lenny Bull promotional photo" loading="lazy" />
+        <div class="about-photo-strip">
+          <img src="images/Lenny+Bull+LIVE+BTS-11.jpg.webp" alt="Lenny Bull live" loading="lazy" />
+          <img src="images/Lenny+Bull+LIVE+BTS-66.jpg.jpeg" alt="Lenny Bull live" loading="lazy" />
+          <img src="images/IMG_2838.jpg.jpeg" alt="Lenny Bull" loading="lazy" />
+        </div>
       </div>
       <div class="about-text">
         <div class="section-label">About</div>
@@ -146,25 +151,17 @@
       -->
 
       <!-- LIVE FEED (uncomment after getting your Behold feed ID) -->
-      <!--
+      
       <div class="instagram-feed">
-        <behold-widget feed-id="YOUR_FEED_ID"></behold-widget>
-        <script defer src="https://w.behold.so/widget.js" type="module"></script>
+        <behold-widget feed-id="y1YG1ZZgOkqsjIoGTNc3"></behold-widget>
+          <script>
+            (() => {
+              const d=document,s=d.createElement("script");s.type="module";
+              s.src="https://w.behold.so/widget.js";d.head.append(s);
+            })();
+          </script>
       </div>
-      -->
 
-      <!-- STATIC FALLBACK (remove once live feed is active) -->
-      <div class="photo-grid">
-        <div class="photo-item">
-          <img src="images/Lenny+Bull+LIVE+BTS-11.jpg.webp" alt="Lenny Bull live" loading="lazy" />
-        </div>
-        <div class="photo-item">
-          <img src="images/Lenny+Bull+LIVE+BTS-66.jpg.jpeg" alt="Lenny Bull live" loading="lazy" />
-        </div>
-        <div class="photo-item">
-          <img src="images/IMG_2838.jpg.jpeg" alt="Lenny Bull" loading="lazy" />
-        </div>
-      </div>
 
     </div>
   </section>
